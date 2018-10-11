@@ -26,3 +26,9 @@ spark-submit distinct_sorted_words.py input/<input-file>
 ```
 
 The output file will be available under `input/<input-file>_sorted/part-00000`.
+
+# Scaling the solution
+
+In the example above the application runs locally but additional options can be provided to `spark-submit` to run the application against a Spark cluster (be it Standalone, Apache Mesos, Yarn or Kubernetes). This would allow the application to fully utilize the CPU and memory resources available to a real Spark cluster and the scheduling capabilities of a cluster manager.
+
+Nonetheless, the existing solution should not run out-of-memory on any given input text file as Spark is designed to spill to disk whenever in-memory operation no longer fit into memory.
