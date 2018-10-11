@@ -12,10 +12,10 @@ Such a problem is an excellent fit for solving using Apache Spark, a cluster com
 
 # Prerequisites
 
-Download the Spark 2.2.1 distribution from https://spark.apache.org/downloads.html and untar it.
-Update the PATH variable to point to the bin directory of the distro.
-Java is installed and `JAVA_HOME` environment variable is set.
-Python 2.7 is installed and all packages used by the solution are installed.
+* Download the Spark 2.2.1 distribution from https://spark.apache.org/downloads.html and untar it.
+* Update the PATH variable to point to the bin directory of the distro.
+* Java is installed and `JAVA_HOME` environment variable is set.
+* Python 2.7 is installed and all packages used by the solution are installed.
 
 # Running the solution
 
