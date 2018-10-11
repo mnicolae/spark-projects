@@ -4,7 +4,7 @@
 #
 # Author: Mihai Nicolae
 #
-# The output will reside in the file <input-file>_sorted/part-00000
+# The output will reside in the file input/<input-file>_sorted/part-00000
 
 from string import punctuation
 from sys import argv
@@ -20,6 +20,7 @@ if __name__ == "__main__":
     conf = SparkConf().setAppName("informatica app")
     sc = SparkContext(conf=conf)
 
+    # print spark context for informational purposes
     for item in sorted(sc._conf.getAll()): print(item)
 
     # read input file into Spark RDD object.
